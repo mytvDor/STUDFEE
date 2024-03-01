@@ -248,7 +248,9 @@ app.use(bodyParser.json()); // Use bodyParser middleware for JSON parsing
 
 // Connect to MongoDB
 mongoose
-  .connect("mongodb://localhost:27017/clgTest")
+  // .connect("mongodb://localhost:27017/clgTest")
+  .connect ("mongodb+srv://mytvdor:cUoYinJk44AbFpMZ@mytv.4jxaoz0.mongodb.net/?retryWrites=true&w=majority&appName=mytv")
+
   .then(() => {
     console.log("Connected to MongoDB");
   })
